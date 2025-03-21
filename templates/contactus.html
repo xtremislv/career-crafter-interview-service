@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navigation-bar">
+      <div class="logo">
+        <span class="logotext"> 3legant </span>
+      </div>
+      <div class="nav-link">
+        <a href="/" class="elements">Home</a>
+        <a href="store" class="elements">Stores</a>
+        <a href="" class="elements">Contact Us</a>
+      </div>
+      <div class="icons">
+        <a href="account"><img src="{% static 'assets/account.svg' %}" /></a>
+        <a href="cart"><img src="{% static 'assets/cart.svg' %}" /></a>
+      </div>
+    </div>
+    <!-- Navigation bar -->
+
+    <!-- banner -->
+    <div class="contactcontent">
+      <div class="header">
+        <span class="headertxtbold"
+          >We believe in sustainable decor. We are passionate about life at
+          home.</span
+        >
+        <span class="headertxtlight"
+          >Revolutionizing campus convenience, our delivery system ensures a
+          hassle-free experience for students and staff alike. From textbooks to
+          snacks, we are your one-stop solution for swift and secure deliveries
+          right to your doorstep. Embrace efficiency with our seamless platform,
+          where we bridge the gap between your needs and the campus essentials.
+          With a commitment to reliability and speed, our service aims to
+          enhance campus life by delivering more than just packages; we are
+          delivering convenience and peace of mind</span
+        >
+      </div>
+
+      <div class="featureselection">
+        <div class="imageplaceholder">
+          <img
+            src="{% static 'assets/images/banner.png' %}"
+            id="red"
+            alt="Red Image"
+          />
+        </div>
+        <div class="content">
+          <div class="title">
+            <span class="bold">About Us</span>
+            <span class="normal"
+              >3legant is a campus delivery service based on IIT Bhilai Campus,
+              Bhilai. Established since 2024. Our customer service is always
+              prepared to support you 24/7</span
+            >
+          </div>
+          <button>
+            <div class="shopnow">
+              <span class="shop">Shop Now</span>
+            </div>
+            <img
+              src="{% static 'assets/iconarrowright.svg' %}"
+              alt="Arrow Icon"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="contactsection">
+        <div class="title">Contact Us</div>
+        <div class="info">
+          <div class="card">
+            <span class="svg"
+              ><img src="{% static 'assets/store 01.svg' %}" alt="Address Icon"
+            /></span>
+            <div class="cardtxt">
+              <span class="cardlight">Address</span>
+              <span class="cardnormal"
+                >D-309 Kanhar hostel, IIt bhilai, Khapri,
+                Chattisgarh-49001</span
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="svg"
+              ><img src="{% static 'assets/call.svg' %}" alt="Phone Icon"
+            /></span>
+            <div class="cardtxt">
+              <span class="cardlight">Contact Us</span>
+              <span class="cardnormal">+91 9893545778</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="svg"
+              ><img src="{% static 'assets/mail.svg' %}" alt="Email Icon"
+            /></span>
+            <div class="cardtxt">
+              <span class="cardlight">Email</span>
+              <span class="cardnormal"
+                ><a href="sourabhda@iitbhilai.ac.in"
+                  >sourabhda@iitbhilai.ac.in</a
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="getintouch">
+          <div class="form">
+            <div class="forminput">
+              <label for="yourname">FULL NAME</label>
+              <input type="text" placeholder="Your Name" id="yourname" />
+            </div>
+
+            <div class="forminput">
+              <label for="Email">EMAIL</label>
+              <input type="text" id="Email" placeholder="Email" />
+            </div>
+
+            <div class="forminput">
+              <label for="message">MESSAGE</label>
+              <input type="text" id="message" placeholder="Message" />
+            </div>
+            <button><span class="buttontxt">Send</span></button>
+          </div>
+          <div class="Map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13670.27676728774!2d81.31916972886036!3d21.240916927954178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a293dafa4af454f%3A0xba5594fa1ee33760!2sBoys%20Hostel%201%20Kanhar%20Hostel!5e0!3m2!1sen!2sin!4v1706178286437!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- banner -->
+
+    <!-- Values-->
+    <div class="values">
+      <div class="card">
+        <span class="svg"> <img src="{% static 'assets/truck.svg' %}" /></span>
+        <div class="text">
+          <span class="dark-txt">Free Shipping</span>
+          <span class="light-txt">Order above ₹500</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="svg"> <img src="{% static 'assets/money.svg' %}" /></span>
+        <div class="text">
+          <span class="dark-txt">Money-back</span>
+          <span class="light-txt">30 days guarantee TC* Applied</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="svg"> <img src="{% static 'assets/lock.svg' %}" /></span>
+        <div class="text">
+          <span class="dark-txt">Secure Payments</span>
+          <span class="light-txt">Secured by Stripe</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="svg"> <img src="{% static 'assets/call.svg' %}" /></span>
+        <div class="text">
+          <span class="dark-txt">24x7 Support</span>
+          <span class="light-txt">Phone and Email support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="logo-link">
+          <div class="logo-slogan">
+            <span class="logo">3legant.</span>
+            <span class="rectangle">|</span>
+            <span class="slogan">Campus delivery system</span>
+            <div class="nav">
+              <a href="/" class="navelements">Home</a>
+              <a href="/store" class="navelements">Stores</a>
+              <a href="" class="navelements">ContactUs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="copyright">
+          <span class="light"
+            >Copyright © 2023 3legant. All rights reserved</span
+          >
+          <span>Privacy Policy</span>
+          <span>Terms of Use</span>
+        </div>
+        <div class="icons">
+          <img src="{% static 'assets/facebook.svg' %}" />
+          <img src="{% static 'assets/instagram.svg' %}" />
+          <img src="{% static 'assets/youtube.svg' %}" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer -->
+  </body>
+</html>

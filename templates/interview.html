@@ -1,0 +1,107 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link href="{% static 'images/favicon.png' %}" rel="icon" />
+    <script
+      src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"
+      type="text/javascript"
+    ></script>
+    `
+    <link rel="stylesheet" href="../static/css/interview.css" />
+    <title>Video & Audio Recorder</title>
+  </head>
+
+  <body>
+    <div class="interview">
+      <div class="questioncontainer">
+        <span style="text-align: center; font-size: 35px">Questions</span>
+        <div class="question">
+          <p>1) Tell me about yourself.</p>
+          <p>2) Why do you want to work with us.</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="recording">
+          <h1 style="text-align: center">Practice Interview</h1>
+          <div
+            class="display-none"
+            id="vid-recorder"
+            style="display: flex; flex-direction: column; align-items: center"
+          >
+            <h3></h3>
+            <video
+              autoplay
+              playsinlne
+              width="600"
+              height="400"
+              id="webcam"
+              style="background-color: black"
+            >
+              Your browser doesn't support the video tag
+            </video>
+            <div class="recording" id="vid-record-status"></div>
+            <!-- This button will start the video recording -->
+            <div style="display: flex; gap: 5px">
+              <button
+                type="button"
+                id="start-vid-recording"
+                onclick="startRecording(this,
+                  document.getElementById('stop-vid-recording'))"
+              >
+                Start recording
+              </button>
+              <!-- This button will stop the video recording -->
+              <button
+                type="button"
+                id="stop-vid-recording"
+                disabled
+                onclick="stopRecording(this,
+                  document.getElementById('start-vid-recording'),
+              document.getElementById('submit-vid'))"
+              >
+                Stop recording
+              </button>
+              <button
+                type="button"
+                id="submit-vid"
+                disabled
+                onclick="submit(this)"
+              >
+                Submit
+              </button>
+              <a href="/interview">
+                <button class="reset">Reset</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="rightbottom">
+          <h2>Instructions:</h2>
+          <div class="instructions">
+            <p>
+              1. To start the interviev click on the start record button and
+              start answering the questions on the left side of the screen.
+            </p>
+
+            <p>
+              2. Once you have answered all the questions click on the stop
+              recording button then click on the submit button.
+            </p>
+
+            <p>
+              3. Maintain a proper posture while answering the questions and
+              make sure you are looking towards the camera of your device.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'scripts/record.js' %}"></script>
+  </body>
+</html>

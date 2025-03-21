@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="{% static 'css/account.css' %}" />
+    <link href="{% static 'images/favicon.png' %}" rel="icon" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="navigation-bar">
+      <div class="logo">
+        <span class="logotext"> 3legant </span>
+      </div>
+      <div class="nav-link">
+        <a href="/" class="elements">Home</a>
+        <a href="store" class="elements">Stores</a>
+        <a href="contactus" class="elements">Contact Us</a>
+      </div>
+      <div class="icons">
+        <a href=""><img src="{% static 'assets/account.svg' %}" /></a>
+        <a href="cart"><img src="{% static 'assets/cart.svg' %}" /></a>
+      </div>
+    </div>
+    <!-- Navigation bar -->
+
+    <!-- account -->
+
+    <div class="myaccountcontent">
+      <div class="title">
+        <div class="titletext">My Account</div>
+      </div>
+      <div class="accountsection">
+        <div class="detail">
+          {% if user.is_authenticated %}
+          <div class="form1">
+            <span class="headingform">Account Details </span>
+
+            <div class="forminput">
+              <label for="displayname">Username </label>
+              <input
+                type="text"
+                placeholder="{{user.username}}"
+                id="displayname"
+                readonly
+              />
+            </div>
+
+            <div class="forminput">
+              <label for="email">Email </label>
+              <input
+                type="email"
+                placeholder="{{user.email}}"
+                id="email"
+                readonly
+              />
+            </div>
+          </div>
+          {% endif %}
+
+          <form action="account" method="POST">
+            {% csrf_token %}
+            <div class="form2">
+              {% for message in messages %}
+              <h3 style="color: red">{{message}}</h3>
+              {% endfor %}
+              <span class="headingform">Password</span>
+
+              <div class="forminput">
+                <label for="old">Old Password</label>
+                <input
+                  type="password"
+                  placeholder="Old Password"
+                  id="old"
+                  name="old_password"
+                  required
+                />
+              </div>
+
+              <div class="forminput">
+                <label for="new">New Password</label>
+                <input
+                  type="password"
+                  placeholder="New password"
+                  id="new"
+                  name="new_password1"
+                  required
+                />
+              </div>
+
+              <div class="forminput">
+                <label for="repeat">Repeat New Password</label>
+                <input
+                  type="password"
+                  placeholder="Repeat new Password"
+                  id="repeat"
+                  name="new_password2"
+                  required
+                />
+              </div>
+              <button type="submit">
+                <span class="savechanges">Save changes</span>
+              </button>
+              <button
+                onclick="window.location.href='logout'"
+                style="background-color: red"
+              >
+                <span class="savechanges">Logout</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- account -->
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="logo-link">
+          <div class="logo-slogan">
+            <span class="logo">3legant.</span>
+            <span class="rectangle">|</span>
+            <span class="slogan">Campus delivery system</span>
+            <div class="nav">
+              <a href="/" class="navelements">Home</a>
+              <a href="store" class="navelements">Stores</a>
+              <a href="contactus" class="navelements">ContactUs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="copyright">
+          <span class="light"
+            >Copyright © 2023 3legant. All rights reserved</span
+          >
+          <span>Privacy Policy</span>
+          <span>Terms of Use</span>
+        </div>
+        <div class="icons">
+          <img src="{% static 'assets/facebook.svg' %}" />
+          <img src="{% static 'assets/instagram.svg' %}" />
+          <img src="{% static 'assets/youtube.svg' %}" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer -->
+  </body>
+</html>

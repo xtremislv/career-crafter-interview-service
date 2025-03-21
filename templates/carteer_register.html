@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carteer register</title>
+    <link rel="stylesheet" href="../static/css/carteer_register.css" />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <!-- Left component -->
+    <div style="display: flex">
+      <div class="animation">
+        <span style="font-size: 100px">Carteer</span>
+        <dotlottie-player
+          src="https://lottie.host/f4927811-daeb-472a-9a05-9522b53c6c64/rT3U9w8NOw.json"
+          background="transparent"
+          speed="1"
+          style="width: 30vw; height: 40vh"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+
+      <!-- Form component -->
+      <div class="right">
+        <div class="title">
+          <div class="signupheader">
+            <span class="up">Sign up</span>
+          </div>
+          <!-- Messages -->
+          <div class="signupcontent">
+            <span id="signin">
+              Already have an account?
+              <a href="carteer_login.html" class="green">Sign in</a>
+            </span>
+          </div>
+        </div>
+        <div class="signupform">
+          <form>
+            <!-- CSRF Token -->
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="your-csrf-token-here"
+            />
+            <!-- Form fields -->
+            <div>
+              <input
+                type="text"
+                name="firstname"
+                id="name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="lastname"
+                id="name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="Username"
+                id="username"
+                placeholder="UserName"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="tel"
+                name="phone"
+                id="username"
+                placeholder="Phone"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="Password"
+                name="Password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <!-- Checkbox for privacy policy -->
+            <label for="privacy">
+              <input
+                type="checkbox"
+                name="privacy policy"
+                id="privacy"
+                required
+                style="width: max-content"
+              />
+              <div>
+                <span class="labellight">I agree with </span>
+                <span class="labeldark">Privacy Policy</span>
+                <span class="labellight"> and </span>
+                <span class="labeldark"> Terms of Use</span>
+              </div>
+            </label>
+            <!-- Sign Up button -->
+            <a href="carteer_home.html">
+              <button type="submit">
+                <span class="signupbutton">Sign Up</span>
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

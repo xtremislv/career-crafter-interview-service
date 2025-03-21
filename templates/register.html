@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/Signup.css' %}" />
+    <link href="{% static 'images/favicon.png' %}" rel="icon" />
+  </head>
+  <body>
+    <!-- Left component -->
+    <div className="left">
+      <div className="image">
+        <img src="{% static 'assets/delivery.jpg' %}" alt="loading" />
+      </div>
+      <div className="logo">
+        {/* <span className="logo-txt">3legant</span> */}
+      </div>
+    </div>
+    <!-- Form component -->
+    <div class="right">
+      <div class="title">
+        <div class="signupheader">
+          <span class="up">Sign up</span>
+        </div>
+        {% for message in messages %}
+        <h3 style="color: red">{{message}}</h3>
+        {% endfor %}
+        <div class="signupcontent">
+          <span id="signin"
+            >Already have an account?
+            <a href="/login" class="green">Sign in</a></span
+          >
+        </div>
+      </div>
+      <div class="signupform">
+        <form action="register" method="POST">
+          {% csrf_token %}
+          <div>
+            <input
+              type="text"
+              name="Username"
+              id="username"
+              placeholder="UserName"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="Password"
+              name="Password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <label for="privacy">
+            <input
+              type="checkbox"
+              name="privacy policy"
+              id="privacy"
+              required
+            />
+            <div>
+              <span class="labellight">I agree with </span>
+              <span class="labeldark">Privacy Policy</span>
+              <span class="labellight"> and </span>
+              <span class="labeldark"> Terms of Use</span>
+            </div>
+          </label>
+          <button type="submit">
+            <span class="signupbutton">Sign Up</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

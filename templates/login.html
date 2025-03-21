@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static 'css/Signin.css' %}" />
+  </head>
+  <body>
+    <!-- left component -->
+    <div className="left">
+      <div className="image">
+        <img src="{% static 'assets/delivery.jpg' %}" alt="loading" />
+      </div>
+    </div>
+    <!-- Form component -->
+    <div class="right">
+      <div class="title">
+        <div class="signupheader">
+          <span class="up">Sign In</span>
+        </div>
+        {% for message in messages %}
+        <h3 style="color: red">{{message}}</h3>
+        {% endfor %}
+        <div class="signupcontent">
+          <span id="signin"
+            >Dont have an accout yet?
+            <a href="/register" class="green">Sign Up</a></span
+          >
+        </div>
+      </div>
+      <div class="signupform">
+        <form action="login" method="POST">
+          {% csrf_token %}
+          <input
+            type="text"
+            name="Username"
+            id="username"
+            placeholder="UserName"
+            required
+          />
+          <input
+            type="Password"
+            name="Password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">
+            <span class="signupbutton">Sign In</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

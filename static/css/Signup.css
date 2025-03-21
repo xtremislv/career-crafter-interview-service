@@ -1,0 +1,197 @@
+.right {
+  display: flex;
+  width: 28.5rem;
+  height: 32.5rem;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  top: 13.75rem;
+  bottom: 21.5rem;
+  left: 51.5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+.signupheader {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.signupcontent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+}
+
+.up {
+  flex: 1 0 0;
+  color: var(--neutral-07100, #141718);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Headline 4 */
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.75rem; /* 110% */
+  letter-spacing: -0.025rem;
+}
+
+#signin {
+  align-self: stretch;
+  color: var(--neutral-04100, #6c7275);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body 2 */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.green {
+  color: var(--Green, #38cb89);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body 2 (Semi) */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+}
+
+.signupform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--neutral-03100, #e8ecef);
+  display: flex;
+  width: 28.5rem;
+  height: 2.5rem;
+  padding-bottom: 0.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+input::placeholder {
+  width: 28.5rem;
+  color: var(--neutral-04100, #6c7275);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body 2 */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+.signupbutton {
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Button S */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem; /* 175% */
+  letter-spacing: -0.025rem;
+}
+
+button {
+  display: flex;
+  width: 28.5rem;
+  padding: 0.625rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: var(--neutral-07100, #141718);
+}
+
+#privacy {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+.labellight {
+  color: var(--neutral-04100, #6c7275);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body 2 */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+.labeldark {
+  color: var(--neutral-07100, #141718);
+  font-feature-settings: "clig" off, "liga" off;
+  /* Body 2 (Semi) */
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem;
+}
+.left {
+  width: 46rem;
+  height: 67.5rem;
+  flex-shrink: 0;
+}
+
+.image {
+  display: flex;
+  width: 46rem;
+  height: 67.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-txt {
+  color: #000;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}

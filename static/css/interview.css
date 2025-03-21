@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.interview {
+  display: flex;
+  padding: 3vw;
+  gap: 9vw;
+  background-color: white;
+  margin: 0%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8vw;
+  box-shadow: -5px 5px 15px;
+  border-radius: 0.6vw;
+  background-color: white;
+}
+
+.recording {
+  padding: 1.2vw;
+  gap: 0.6vw;
+}
+
+.questioncontainer {
+  width: 48vw;
+  background-color: white;
+  border-radius: 0.6vw;
+  padding: 1.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  box-shadow: 5px 5px 15px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.question p {
+  font-size: 20px;
+}
+
+button {
+  width: 9vw;
+  height: max-content;
+  padding: 1.2vw;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9vw;
+}
+
+#start-vid-recording:hover {
+  background-color: rgb(58, 213, 58);
+  color: white;
+}
+
+#stop-vid-recording:hover {
+  background-color: red;
+  color: white;
+}
+
+#submit-vid:hover {
+  background-color: orange;
+  color: white;
+}
+
+.reset:hover {
+  background-color: grey;
+  color: white;
+}
+
+.rightbottom {
+  padding: 1.8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vw;
+  justify-content: center;
+}
+
+.instructions p {
+  font-size: 1vw;
+}
