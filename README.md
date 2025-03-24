@@ -10,7 +10,7 @@ This system evaluates:
 - **Body Language** (posture, gestures)
 - **Facial Expressions** (confidence indicators)
 
-🔗 **GitHub Repository:** [Career Crafters Interview System](https://github.com/NamanT98/Career-Crafter-Interview-System)
+🔗 **GitHub Repository:** https://github.com/xtremislv/career-crafter-interview-service
 
 ## 📊 Key Functionalities
 
