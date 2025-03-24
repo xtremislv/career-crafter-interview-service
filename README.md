@@ -35,6 +35,16 @@ This system evaluates:
 4. **Interview Simulation** – Record and analyze user responses (audio & video).
 5. **Analysis & Feedback** – Provide detailed evaluation on verbal and non-verbal cues.
 
+## 📷 System Output
+### Bad Posture Detection
+![Bad Posture Detection](https://github.com/user-attachments/assets/b94894d4-1e9c-47cd-ad7c-d6c6a00217ab)
+
+
+### Good Posture Detection
+![Good Posture Detection](https://github.com/user-attachments/assets/75fc368e-d7d0-4fcb-8754-34b7a6e7d1ea)
+
+
+
 ## 🧰 Technology Stack
 - **Backend:** Django (Python), PostgreSQL
 - **Audio Analysis:** SpeechRecognition, Praat
