@@ -1,6 +1,5 @@
 # Career Crafters: Interview Analysis System
 
-![GitHub License](https://img.shields.io/github/license/NamanT98/Career-Crafter-Interview-System)
 
 ## 📌 Introduction
 In today's competitive job market, excelling in interviews is crucial. The **Career Crafters Interview Analysis System** is an AI-powered platform designed to simulate interviews, assess both verbal and non-verbal communication skills, and provide detailed feedback to improve performance.
